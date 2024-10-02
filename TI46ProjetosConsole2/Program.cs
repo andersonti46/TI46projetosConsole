@@ -10,7 +10,7 @@ namespace TI46ProjetosConsole2
     {
         static void Main(string[] args)
         {
-            exercicio5();
+            exercicio6();
             Console.ReadKey();
 
         }
@@ -105,6 +105,21 @@ namespace TI46ProjetosConsole2
 
             
             Console.WriteLine($"O preço final do produto com desconto é: R${precoFinal}");
+
+            
+        }
+
+        private static void exercicio6()
+        {
+            
+            Console.Write("Digite a temperatura em Celsius: ");
+            double celsius = Convert.ToDouble(Console.ReadLine());
+
+            
+            double fahrenheit = (celsius * 9 / 5) + 32;
+
+            
+            Console.WriteLine($"{celsius} graus Celsius equivalem a {fahrenheit} graus Fahrenheit.");
         }
     }
     
